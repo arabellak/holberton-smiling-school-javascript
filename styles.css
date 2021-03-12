@@ -169,7 +169,7 @@
   
   /**Queries*/
   
-  @media screen and(768px){
+  @media screen and(min-width:768px){
       body.pricing {
           background-repeat: no-repeat;
           background-size: cover;
@@ -196,7 +196,7 @@
       }
   }
   
-  @media screen and(576px){
+  @media screen and(min-width:576px){
       body.pricing {
           background-repeat: no-repeat;
           background-size: cover;
@@ -210,7 +210,6 @@
       }
       
       div .middle-part h1 {
-          padding-top: ;
           font-size: 30px;
       }
       
@@ -224,3 +223,23 @@
       }
   }
   
+  /*Loader*/
+  .loader {
+    border: 10px solid #FFF;
+    border-top: 10px solid #FFF;
+    border-right: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+    border-left: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: auto;
+    animation: load 2s linear infinite;
+    -webkit-animation: load 2s linear infinite;
+  }
+
+  @keyframes load {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
