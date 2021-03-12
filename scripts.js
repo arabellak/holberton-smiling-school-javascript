@@ -97,6 +97,13 @@ function callPricing(){
   //$('#load').hide();
 };
 
+function courses(){};
+
+function callCourses(){
+  $.get('https://smileschool-api.hbtn.info/courses', function(q, topic, sort){})
+};
+
 callQuotes();
 callTutorials();
 callPricing();
+callCourses();
